@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Reminder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        .receipt {
+            width: 320px;
+            background: #fff;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .logo {
+            width: 80px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            margin: 5px 0;
+        }
+
+        p {
+            font-size: 12px;
+            margin: 2px 0;
+        }
+
+        hr {
+            border: 1px dashed #000;
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            font-size: 14px;
+        }
+
+        td {
+            padding: 4px 0;
+        }
+
+        .total {
+            font-weight: bold;
+        }
+
+        #qrcode {
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 8px;
+            width: 100%;
+            background: #007dff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media print {
+            button { display: none; }
+            body { background: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="receipt">
+    <!-- Spc LOGO -->
+    <img src="logo.png" class="logo">
+
+    <p>Payment Reminder</p>
+    <p>Dear Valued Subscriber,</p>
+
+    <hr>
+
+    <p>
+    This is a friendly reminder to settle your internet subscription payment to continue enjoying uninterrupted service.
+ </p>
+
+    <p>
+        Pay via GCash:
+    </p>
+
+    <p>
+        0929-544-6926 (CA***R C.)
+    </p>
+    <hr>
+
+    <p><b>For assistance,</b></p>
+
+<p>
+Message us on our Facebook page:
+</p>
+
+<p>
+<a href="https://www.facebook.com/spccabletv" target="_blank">
+    https://www.facebook.com/spccabletv
+</a>
+</p>
+
+<p>
+Or you can call/text us at<br>
+0917-556-5219 or 0918-926-0945<br>
+during our business hours from 8 am to 5 pm
+</p>
+
+        <script src="https://www.facebook.com/spccabletv"></script>
+
+    <button onclick="printReceipt()">Print Receipt</button>
+</div>
+</body>
+</html>
